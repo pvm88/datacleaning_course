@@ -45,12 +45,14 @@ setNames(all.data,feat.names)
 selected_features <- grep("std\\(\\)|mean\\(\\)|_Id",perl=T,feat.names)
 all.data.selected <- all.data[,selected_features,with=F]
 
-# make the names get the 
+# make the names more meaningful/readable 
 
 
 replaced_1 <- gsub("\\(\\)-"," for ",names(all.data.selected),perl=T)
 replaced_2 <- gsub("\\(\\)","",replaced_1,perl=T)
 replaced_3 <- gsub("-"," ",replaced_2,perl=T)
+
+setNames(all.data.selected,replaced_3)
 
 # read the activity labels and join so we can "replace" the ids with the labels   
 activity.data <- read.table("activity_labels.txt") 

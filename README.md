@@ -1,20 +1,20 @@
-# datacleaning_course
+# Coursera datacleaning_course
 Result (R source, readme and codebook) for project/exercise in the Coursera datacleaning course   
 
-# Prereqs
+## Prereqs
 Make sure **ALL** required data files are in the working directory (just like the run_analysis.R file). Data files in a subdirectory will **NOT** be found  
 
-If all files are in the same directory, but this is not the working directory, make sure to set the work directory using the setwd() function. 
+If all files are in the same directory, but this is not the working directory, make sure to set the work directory using the *setwd()* function. 
 
-The run_analysis.R requires the data.table package. 
-Ensure to install the package before running the run_analysis.R script 
+The run_analysis.R requires the *data.table* package. 
+Ensure to install the package before running the *run_analysis.R* script 
 
-# Errors  
+## Errors  
 The script will load and process all required files and you'll notice the usual (hard) waywhen a required file is missing. 
 The code has no separate (coded) error message when 1 or more files are not found.
 
 *** 
-# Processing the data files
+## Processing the data files
 
 The process consists of 5 steps:  
 ##### Merge the training and the test sets to create one data set.
